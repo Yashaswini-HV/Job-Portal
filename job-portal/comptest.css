@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.company-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    max-width: 1200px; /* Add a maximum width to keep the layout centered */
+    margin: 0 auto; /* Center the entire layout horizontally */
+}
+
+.company-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    /* ... (rest of your company-card styles) */
+    flex-basis: calc(25% - 20px); /* Distribute four cards per row */
+}
+
+.company-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.company-card h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.company-card a {
+    display: block;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.company-card a:hover {
+    background-color: #0056b3;
+}
+
+.view-all {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-all a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.view-all a:hover {
+    background-color: #555;
+}
